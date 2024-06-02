@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey-form</title>
+    <meta charset="UTF-8">
+    <mete name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This survey form is to collect information about you for the safety of the community</p>
+    <form id="survey-form">
+      Enter your Name:<label id="name-label">
+      <input id="name" type="text" placeholder="name"required>
+      </label>
+      <br>
+      Enter your Email:<label id="email-label">
+      <input id="email" name="email" type="email" placeholder="email" required>
+      </label>
+      <br>
+      Enter a Number:<label id="number-label">
+      <input id="number" name="number" type="number" min="18" max="120" placeholder="number" reguired>
+      </label>
+      <br>
+      <select id="dropdown">
+        <option>(select one)</option>
+        <option>online</option>
+        <option>friend</option>
+      </select>
+      <br>
+      <label>
+        <legend>Account Type (required)</legend>
+      <input type="radio" name="radio" value="radio"checked>
+      <br>
+       <input type="radio" name="radio" value="radio">
+      </label> 
+      <br>
+      <label>
+        <input id="checkbox" type="checkbox" value="checkbox" checked="checkbox">
+        <br>
+        <input id="checkbox" type="checkbox" value="checkbox" checked="checkbox">
+        </label>
+        <br>
+      <label>
+      <textarea id="bio" rows="3" cols="30" placeholder="Tell us about yourself..."></textarea>
+      </label>
+      <br>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+  </html>
